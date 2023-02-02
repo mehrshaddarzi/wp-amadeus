@@ -17,17 +17,15 @@ class WP_AMADEUS_REST
 
     public function __construct()
     {
-        add_action('init', function () {
+        /*add_action('init', function () {
             if (!isset($_GET['_amadeus'])) {
                 return;
             }
-
             echo '<pre>';
             var_dump(WP_AMADEUS_REST::flight_offers());
             echo '<hr>';
-
             exit;
-        });
+        });*/
     }
 
     public static function option($default = [])
